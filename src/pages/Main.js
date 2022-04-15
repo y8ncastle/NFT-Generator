@@ -174,15 +174,14 @@ export default function Main() {
           .once('transactionHash', function (hash) {
             setNftAdr(`https://ropsten.etherscan.io/tx/${hash}`);
           })
-          .on('confirmation', function (receipt) {
-            console.log(receipt);
-            alert('NFT 발행이 완료되었습니다.');
-            handleLoadModal();
+          .once('confirmation', function (receipt) {
+            alert('NFT 발행을 완료했습니다.');
+            setLoad(false);
           })
-          .on('error', function (error) {
+          .once('error', function (error) {
             console.log(error);
             alert('블록체인 기록에 실패했습니다.');
-            handleLoadModal();
+            setLoad(false);
           });
       } catch (err) {
         alert(err);
