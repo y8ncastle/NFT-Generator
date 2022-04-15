@@ -1,2 +1,5 @@
-# NFT-Generator
-[Team] Ethereum Wallet and NFT Generator with IPFS
+# NFT Generator
+
+## ITRC Forum 2022 전시 작품 ##
+- 블록체인에 어려움을 느끼는 사용자의 접근 용이성 제고
+- 자신만의 컨텐츠를 NFT로 자산화하여 블록체인 상에 영구히 보존
