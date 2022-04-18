@@ -43,7 +43,7 @@ const modalStyle2 = {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: '30%',
+  width: '45%',
   color: '#333333',
   bgcolor: '#ffffff',
   border: '10px solid #ffffff',
@@ -252,7 +252,7 @@ export default function Main() {
               <Button
                 sx={{
                   mt: 3,
-                  width: '50%',
+                  width: '75%',
                   fontSize: 16,
                   backgroundColor: '#ba0000',
                   color: '#ffffff',
@@ -272,15 +272,6 @@ export default function Main() {
                 onClick={toggleRevealed}
               >
                 {revealed === true ? '비공개' : '공개'}
-              </Button>
-              <Button
-                sx={{ mt: 3, width: '25%', fontSize: 16 }}
-                variant="contained"
-                size="large"
-                color="inherit"
-                onClick={() => resetHolder('1')}
-              >
-                초기화
               </Button>
             </CardContent>
           </Card>
@@ -309,7 +300,7 @@ export default function Main() {
                 <Button
                   sx={{
                     mt: 3,
-                    width: '50%',
+                    width: '75%',
                     fontSize: 16,
                     backgroundColor: '#339966',
                     color: '#ffffff',
@@ -329,15 +320,6 @@ export default function Main() {
                   onClick={() => handleQrModal()}
                 >
                   QR
-                </Button>
-                <Button
-                  sx={{ mt: 3, width: '25%', fontSize: 16 }}
-                  variant="contained"
-                  size="large"
-                  color="inherit"
-                  onClick={() => resetHolder('2')}
-                >
-                  초기화
                 </Button>
               </div>
             </CardContent>
@@ -414,21 +396,12 @@ export default function Main() {
                 disabled
               />
               <Button
-                sx={{ mt: 3, width: '75%', fontSize: 16 }}
+                sx={{ mt: 3, width: '100%', fontSize: 16 }}
                 variant="contained"
                 size="large"
                 onClick={() => makeNFT()}
               >
                 NFT 발행
-              </Button>
-              <Button
-                sx={{ mt: 3, width: '25%', fontSize: 16 }}
-                variant="contained"
-                size="large"
-                color="inherit"
-                onClick={() => resetHolder('3')}
-              >
-                초기화
               </Button>
             </CardContent>
           </Card>
